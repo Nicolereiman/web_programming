@@ -1,0 +1,19 @@
+body{
+    background-color: pink;}
+
+p #Santelmo{
+    font-size: 42;
+}
+
+h1 { color: lightcoral; 
+border:  1px salmon;}
+h3{ color: coral;  font-family: "Times New Roman", Times, serif;margin:10px}
+
+.logo {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+ }
+
