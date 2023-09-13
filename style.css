@@ -1,19 +1,49 @@
-body{
-    background-color: pink;}
-
-p #Santelmo{
-    font-size: 42;
+/* Fondo blanco */
+body {
+    background-color: #FFFFFF;
+    font-family: "Lato", Arial, sans-serif; /* Agrega "Lato" como primera opción de fuente */
+    margin: 0;
+    padding: 0;
 }
 
-h1 { color: lightcoral; 
-border:  1px salmon;}
-h3{ color: coral;  font-family: "Times New Roman", Times, serif;margin:10px}
+/* Estilo para el párrafo con ID "Santelmo" */
+p#Santelmo {
+    font-size: 42px;
+    color: #2A6B4D;
+}
 
+/* Estilo para el encabezado principal */
+h1 {
+    color: #FFFFFF;
+    font-family: Playfair DisplaY,    ;
+    border: 1px solid #004D29;
+    padding: 10px;
+    text-align: center;
+    background-color: #2A6B4D;
+}
+
+/* Estilo para los subtítulos */
+h3 {
+    color: #558870;
+    font-family: "Times New Roman", Times, serif;
+    margin: 10px 0;
+}
+
+/* Estilo para el logo */
 .logo {
     position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 100px;
-    height: 100px;
- }
+    bottom: 10px;
+    right: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #80A694;
+    border: 2px solid #004D29;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efecto de escala al pasar el mouse sobre el logo */
+.logo:hover {
+    transform: scale(1.2);
+}
 
