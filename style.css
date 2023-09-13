@@ -1,25 +1,28 @@
 /* Fondo blanco */
-body {
-    background-color: #FFFFFF;
-    font-family: "Lato", Arial, sans-serif; /* Agrega "Lato" como primera opción de fuente */
-    margin: 0;
-    padding: 0;
-}
+
 
 /* Estilo para el párrafo con ID "Santelmo" */
-p#Santelmo {
-    font-size: 42px;
-    color: #2A6B4D;
-}
 
 /* Estilo para el encabezado principal */
 h1 {
     color: #FFFFFF;
-    font-family: Playfair DisplaY,    ;
+    font-family: "Playfair DisplaY", "DM Serif Display", serif   ;
     border: 1px solid #004D29;
     padding: 10px;
     text-align: center;
     background-color: #2A6B4D;
+}
+
+p#SecciónBarrios {
+    font-size: 1.5em; 
+    font-weight: bold; 
+    color: #2A6B4D;
+
+body {
+    background-color: #FFFFFF;
+    font-family: "Lato", "Noto Sans Old Permic", sans-serif; /* Agrega "Lato" como primera opción de fuente */
+    margin: 0;
+    padding: 0;
 }
 
 /* Estilo para los subtítulos */
@@ -47,3 +50,7 @@ h3 {
     transform: scale(1.2);
 }
 
+div{
+    width: 25%;
+    display: inline;
+}
