@@ -1,28 +1,25 @@
-/* Fondo blanco */
-
-
-/* Estilo para el párrafo con ID "Santelmo" */
+//* Fondo blanco y tipografía Lato */
+body {
+    font-family: "Lato", "Noto Sans Old Permic", sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
 /* Estilo para el encabezado principal */
 h1 {
     color: #FFFFFF;
-    font-family: "Playfair DisplaY", "DM Serif Display", serif   ;
+    font-family: "Playfair Display", "DM Serif Display", serif;
     border: 1px solid #004D29;
     padding: 10px;
     text-align: center;
     background-color: #2A6B4D;
 }
 
+/* Estilo para el párrafo con ID "SecciónBarrios" (corregido) */
 p#SecciónBarrios {
-    font-size: 1.5em; 
-    font-weight: bold; 
+    font-size: 1.5em;
+    font-weight: bold;
     color: #2A6B4D;
-
-body {
-    background-color: #FFFFFF;
-    font-family: "Lato", "Noto Sans Old Permic", sans-serif; /* Agrega "Lato" como primera opción de fuente */
-    margin: 0;
-    padding: 0;
 }
 
 /* Estilo para los subtítulos */
@@ -41,7 +38,7 @@ h3 {
     height: 80px;
     border-radius: 50%;
     background-color: #80A694;
-    border: 2px solid #004D29;
+    border: 2px solid #80A694;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -50,7 +47,39 @@ h3 {
     transform: scale(1.2);
 }
 
-div{
+div {
     width: 25%;
     display: inline;
 }
+
+@media screen and (min-width: 769px) {
+    body{
+    background-color: #D5E1DB;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body{
+    background-color: #AAC4B8;
+    }
+}
+
+/* unvisited link */
+a:link {
+    color: darkblue;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: #22018f;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #4176e8;
+  }
+  
+  /* selected link */
+  a:active {
+    color: #0000FF;
+  }
