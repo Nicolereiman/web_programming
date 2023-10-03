@@ -2,7 +2,9 @@
 <html>
 <head>
     <!-- Enlace a una hoja de estilo CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <!-- Título de la página -->
     <title>TuriBA</title>
 </head>
@@ -18,28 +20,46 @@
     <main>
         <!-- Subtítulo -->
         <p id="SecciónBarrios">Barrios claves de la ciudad</p>
-        <div> 
-        <!-- Párrafo con ID "Santelmo" y texto en negrita -->
-        <h3><strong>San Telmo: Historia y Elegancia</strong></h3>
-         <!-- Imagen de San Telmo -->
-         <img src="https://media.viajando.travel/p/01d26e53c52eb11e05fbe20a6b1ceb58/adjuntos/236/imagenes/000/490/0000490895/buenos-aires-vacaciones-santelmowebp.png" alt="San Telmo" width="300" height="200">
-        <!-- Párrafo con texto descriptivo sobre San Telmo -->
-        <p>En las calles adoquinadas de San Telmo,<br>
-        el pasado y la modernidad se entrelazan.<br>
-        Sus ferias de antigüedades y tango dejan asombrados,<br>
-        un rincón bohemio donde los corazones se abrazan.</p>
-        </div>
-        <div>
-         <!-- Párrafo con ID "Santelmo" y texto en negrita -->
-         <h3><strong>San Telmo: Historia y Elegancia</strong></h3>
-         <!-- Imagen de San Telmo -->
-         <img src="https://media.viajando.travel/p/01d26e53c52eb11e05fbe20a6b1ceb58/adjuntos/236/imagenes/000/490/0000490895/buenos-aires-vacaciones-santelmowebp.png" alt="San Telmo" width="300" height="200">
-        <!-- Párrafo con texto descriptivo sobre San Telmo -->
-        <p>En las calles adoquinadas de San Telmo,<br>
-        el pasado y la modernidad se entrelazan.<br>
-        Sus ferias de antigüedades y tango dejan asombrados,<br>
-        un rincón bohemio donde los corazones se abrazan.</p>
-        </div>
+        
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://media.viajando.travel/p/01d26e53c52eb11e05fbe20a6b1ceb58/adjuntos/236/imagenes/000/490/0000490895/buenos-aires-vacaciones-santelmowebp.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>San Telmo</h5>
+                  <p>Visitar el barrio de San Telmo es una experiencia única e inolvidable para cualquiera que desee sumergirse en la rica historia y cultura de Buenos Aires, Argentina. Este encantador barrio, ubicado en el corazón de la ciudad, tiene mucho que ofrecer a los visitantes de todas las edades.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://elojodelarte.com/media/k2/items/cache/e1a325047b148c9441be2b14c42dc196_L.webp?t=20230509_153739" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Palermo</h5>
+                  <p>Palermo es un barrio de Buenos Aires que tenés que visitar si o si por su animada escena cultural, hermosos parques y excelente comida..</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.disfrutabuenosaires.com/f/argentina/buenos-aires/guia/recoleta.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Recoleta</h5>
+                  <p>Recoleta es un barrio de Buenos Aires que merece ser visitado por su elegancia, arquitectura impresionante y su famoso cementerio, donde descansan figuras históricas de Argentina. Además, ofrece una gran cantidad de galerías de arte, tiendas exclusivas y restaurantes de alta calidad, lo que lo convierte en un destino cultural y gastronómico imperdible.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+   
        
         <!-- Párrafo con enlace a Palermo -->
         <p>Descubre la arquitectura en <a href="https://www.disfrutabuenosaires.com/palermo">Palermo</a> y disfruta de la naturaleza en sus parques.</p>
@@ -93,5 +113,7 @@
         <p>Descubre la riqueza cultural de Buenos Aires.</p>
         
     </footer>
+
+   
 </body>
 </html>
