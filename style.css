@@ -101,6 +101,19 @@ a:link {
   object-fit: cover; 
 }
 
-main {
-    margin-left: 20px;
+ #post {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 767) {
+  #post {
+      text-align: left;
+      background-color: AAC4B8; /* Cambiar el color de fondo para pantallas pequeñas si lo deseas */
+  }
+}
+
+@media screen and (min-width: 768) {
+  body {
+      text-align: center;
+  }
 }
