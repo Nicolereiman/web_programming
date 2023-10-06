@@ -103,6 +103,7 @@ a:link {
 
  #post {
   margin-left: 20px;
+  margin-right: 20px;
 }
 
 @media screen and (max-width: 767) {
@@ -115,5 +116,35 @@ a:link {
 @media screen and (min-width: 768) {
   body {
       text-align: center;
+  }
+}
+
+/* Estilo para el container de tours */
+.tours-container {
+  display: flex;
+  flex-direction: column; /* Diseño vertical por defecto */
+
+  /* Agregamos un margen entre los tours */
+  gap: 20px;
+}
+
+/* Estilo para los tours */
+.tour {
+  background-color: #9FA292;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.tour img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 769px) {
+  .tours-container {
+    flex-direction: row;
   }
 }
