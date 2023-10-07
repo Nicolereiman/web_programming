@@ -166,14 +166,13 @@ a:link {
 
 .usuario-info {
   display: flex;
-  align-items: center;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  text-align: center; /* Centrar el texto */
+  flex-direction: column; /* Apilar elementos verticalmente */
 }
 
-.usuario-info img {
-  max-width: 80px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
+
 
 .usuario-detalles h3 {
   font-weight: bold;
@@ -192,3 +191,65 @@ a:link {
 }
 
 /* Agrega más estilos según tus preferencias */
+
+/* Estilos para el formulario */
+form {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Estilos para los campos del formulario */
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #2A6B4D;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="email"],
+form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Estilo para el botón del formulario */
+form input[type="button"] {
+  background-color: #2A6B4D;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Cambia el color del botón al pasar el mouse sobre él */
+form input[type="button"]:hover {
+  background-color: #004D29;
+}
+
+/* Estilo para el mensaje de error (si es necesario) */
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Estilo para el título del formulario */
+form h2 {
+  color: #2A6B4D;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+

@@ -19,7 +19,7 @@
     <!-- Contenido principal -->
     <main>
         <!-- Subtítulo -->
-        <p id="SecciónBarrios">Barrios claves de la ciudad</p>
+        <h3>Barrios claves de la ciudad</h3>
         
         <div id="carouselExampleCaptions" class="carousel slide">
             <div class="carousel-indicators">
@@ -91,42 +91,50 @@
           <div class="tours-container">
             <div class="tour">
               <img src="San telmo.jpg" alt="San Telmo Tour">
-              <h2>San Telmo Tour</h2>
+              <h3>San Telmo Tour</h3>
               <p>Descubre la historia y la cultura de San Telmo en este emocionante recorrido a pie.</p>
             </div>
             <div class="tour">
               <img src="palermo bici.jpg" alt="Palermo Tour">
-              <h2>Palermo Tour</h2>
+              <h3>Palermo Tour</h3>
               <p>Explora la belleza natural y la escena cultural de Palermo en bicicleta.</p>
             </div>
             <div class="tour">
               <img src="cementerio recoleta.jpg" alt="Recoleta Tour">
-              <h2>Recoleta Tour</h2>
+              <h3>Recoleta Tour</h3>
               <p>Visita los lugares más emblemáticos de Recoleta y su famoso cementerio en este tour a pie.</p>
             </div>
           </div>
           
           
           <!-- Subtítulo -->
-          <h3>Encontrá tu barrio ideal!</h3>
+          <h3>Reservá online para recorrer el barrio que quieras</h3>
           
           <!-- Formulario con etiquetas para ingresar datos -->
+
           <form action="" method="post">
-              <label for="Fecha de nacimiento">Fecha de nacimiento:</label>
-              <input type="date" name="nacimiento" id="">
-              <p></p>
-              <label for="mail">Correo electrónico:</label>
-              <input type="email" name="mail" id="">
-              <p></p>
-              <label for="color favorito">Color favorito:</label>
-              <input type="color" name="colorfav" id="">
-              <p></p>
-              <input type="button" value="Quiero saber cuál es mi barrio ideal!">
-          </form>
-        </div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre">
+            <p></p>
+            <label for="nacimiento">Fecha de nacimiento:</label>
+            <input type="date" name="nacimiento" id="nacimiento">
+            <p></p>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" name="email" id="email">
+            <p></p>
+            <label for="tour">Tour solicitado:</label>
+            <select name="tour" id="tour">
+                <option value="San Telmo Tour">San Telmo Tour</option>
+                <option value="Palermo Tour">Palermo Tour</option>
+                <option value="Recoleta Tour">Recoleta Tour</option>
+            </select>
+            <p></p>
+            <input type="button" value="Reservar">
+        </form>
+        
        <!-- Sección de Reseñas de Usuarios -->
   <section id="resenas">
-    <h2>Reseñas de Usuarios</h2>
+    <h3>Reseñas de Usuarios</h3>
     <div class="resena">
         <div class="usuario-info">
             <div class="usuario-detalles">
