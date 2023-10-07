@@ -148,3 +148,47 @@ a:link {
     flex-direction: row;
   }
 }
+
+/* Estilos para la Sección de Reseñas de Usuarios */
+#resenas {
+  text-align: center;
+  padding: 20px;
+}
+
+.resena {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.usuario-info {
+  display: flex;
+  align-items: center;
+}
+
+.usuario-info img {
+  max-width: 80px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.usuario-detalles h3 {
+  font-weight: bold;
+  align-items: center;
+}
+
+.puntuacion {
+  font-size: 24px;
+  color: #FFD700; /* Color dorado para la puntuación */
+  margin: 10px 0;
+  align-items: center;
+}
+
+.comentario {
+  font-style: italic;
+}
+
+/* Agrega más estilos según tus preferencias */
