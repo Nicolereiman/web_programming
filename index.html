@@ -20,8 +20,7 @@
     </header>
 
     <!-- Contenido principal -->
-    <main>
-        <!-- Subtítulo -->
+    <!--  
         
         <div id="carouselExampleCaptions" class="carousel slide">
             <div class="carousel-indicators">
@@ -63,18 +62,19 @@
           </div>
    
         <div id="post">
-          <!-- Párrafo con enlace a Palermo -->
+          <!-- Párrafo con enlace a Palermo 
           <p>Descubre la arquitectura en <a href="https://www.disfrutabuenosaires.com/palermo">Palermo</a> y disfruta de la naturaleza en sus parques.</p>
           
-          <!-- Subtítulo -->
+          <!-- Subtítulo 
           <h3>Rincones Escondidos</h3>
           
-          <!-- Lista desordenada de barrios -->
+          <!-- Lista desordenada de barrios 
           <ul>
               <li>La Boca: Colores y Tradición</li>
               <li>Recoleta: Elegancia y Cultura</li>
               <li>Chacarita: Arte y Tranquilidad</li>
           </ul>
+          -->
           
           <!-- Subtítulo -->
           <h3>Explora la Variedad de la Ciudad</h3>
@@ -189,7 +189,7 @@
     <div class="resena">
       <div class="usuario-info">
           <div class="usuario-detalles">
-              <h3>Maria Johnson</h3>
+              <h3>Lucy Johnson</h3>
               <p>Age: 28</p>
               <p>City: New York</p>
           </div>
@@ -199,7 +199,33 @@
       </div>
       <p class="comentario">"The tour was great, but there's always room for improvement. Still, I enjoyed it!"</p>
   </div>
-
+  <div id="contenedor-reseñas"></div>
+  <h3>Agregar Reseña</h3>
+  <form id="formularioResena">
+    <label for="nombreResena">Nombre:</label>
+    <input type="text" id="nombreResena" name="nombreResena" required>
+    
+    <label for="edadResena">Edad:</label>
+    <input type="number" id="edadResena" name="edadResena" required>
+  
+    <label for="ciudadResena">Ciudad:</label>
+    <input type="text" id="ciudadResena" name="ciudadResena" required>
+  
+    <label for="comentarioResena">Comentario:</label>
+    <textarea id="comentarioResena" name="comentarioResena" rows="4" required></textarea>
+  
+    <label for="puntuacionResena">Puntuación:</label>
+    <select id="puntuacionResena" name="puntuacionResena" required>
+      <option value="5">★★★★★</option>
+      <option value="4">★★★★☆</option>
+      <option value="3">★★★☆☆</option>
+      <option value="2">★★☆☆☆</option>
+      <option value="1">★☆☆☆☆</option>
+    </select>
+  
+    <input type="button" value="Agregar Reseña" onclick="guardarResena()">
+  </form>
+  <div id="agradecimiento"></div>
 
   </section>
 
@@ -213,7 +239,7 @@
     <!-- Pie de página -->
     <footer>
         <!-- Párrafo de descripción del sitio -->
-        <p>Descubre la riqueza cultural de Buenos Aires.</p>
+        <p>Agregar redes sociales.</p>
         
     </footer>
 

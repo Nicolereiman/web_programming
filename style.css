@@ -1,14 +1,20 @@
 //* Fondo blanco y tipografía Lato */
 body {
-    font-family: "Lato", "Noto Sans Old Permic", sans-serif;
+    font-family: montserrat,arial,sans-serif;
+    font-weight: 350;
+  letter-spacing: -.02em;
     margin: 0;
     padding: 0;
+}
+::selection {
+  background-color: #004D29!important;
+  color: #fff!important;
 }
 
 /* Estilo para el encabezado principal */
 h1 {
     color: #FFFFFF;
-    font-family: "Playfair Display", "DM Serif Display", serif;
+    font-family: montserrat,arial,sans-serif;
     border: 1px solid #004D29;
     padding: 10px;
     text-align: center;
@@ -25,7 +31,7 @@ p#SecciónBarrios {
 /* Estilo para los subtítulos */
 h3 {
     color: #558870;
-    font-family: "Times New Roman", Times, serif;
+    font-family: montserrat,arial,sans-serif;
     margin: 10px 0;
 }
 
@@ -50,7 +56,7 @@ h3 {
 
 @media screen and (min-width: 769px) {
     body{
-    background-color: #D5E1DB;
+    background-color: #fefefe;
     }
 }
 
@@ -136,7 +142,7 @@ a:link {
 
 /* Estilo para los tours */
 .tour {
-  background-color: #FFFFFF; /* Fondo blanco */
+  background-color: #D5E1DB; /* Fondo blanco */
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
@@ -162,18 +168,42 @@ a:link {
 }
 
 /* Estilos para la Sección de Reseñas de Usuarios */
+
+
 #resenas {
   text-align: center;
   padding: 20px;
 }
 
+/* Establece un contenedor flex con flex-direction */
+.reseñas-container {
+  display: flex; /* Muestra las reseñas como un flexbox */
+  flex-wrap: wrap; /* Asegura que las reseñas se envuelvan a la siguiente línea */
+  justify-content: space-between; /* Distribuye las reseñas horizontalmente */
+}
+
 .resena {
-  margin: 20px;
+  display: inline-block; /* Cambiar a mostrar en línea en lugar de en bloque */
+  width: 30%; /* Ajusta el ancho según tus preferencias */
+  margin: 1%; /* Agrega un pequeño margen entre las reseñas */
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  background-color: #f9f9f9;
+  background-color: #D5E1DB;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  /* Cambia el contenedor a un flexbox vertical en pantallas pequeñas */
+  .reseñas-container {
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente las reseñas */
+  }
+
+  .resena {
+    width: 100%; /* Ocupa todo el ancho disponible en pantallas pequeñas */
+  }
 }
 
 .usuario-info {
@@ -206,7 +236,7 @@ a:link {
 
 /* Estilos para el formulario */
 form {
-  background-color: #FFFFFF;
+  background-color: #D5E1DB;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
@@ -245,6 +275,9 @@ form input[type="button"] {
   cursor: pointer;
   font-size: 16px;
 }
+form input[type="button"] hover {
+  background-color: #004D29; /* Color de fondo al pasar el mouse */
+}
 
 #mensaje-reserva {
   background-color: #2A6B4D;
@@ -274,4 +307,5 @@ form h2 {
   font-size: 24px;
   margin-bottom: 20px;
 }
+
 
