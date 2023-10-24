@@ -47,12 +47,7 @@ h3 {
     transform: scale(1.2);
 }
 
-/*
-div .nose {
-    width: 25%;
-    display: inline;
-}
-*/
+
 @media screen and (min-width: 769px) {
     body{
     background-color: #D5E1DB;
@@ -109,7 +104,7 @@ a:link {
 @media screen and (max-width: 767) {
   #post {
       text-align: left;
-      background-color: AAC4B8; /* Cambiar el color de fondo para pantallas pequeñas si lo deseas */
+      background-color: AAC4B8; /* Cambiar el color de fondo para pantallas chicas*/
   }
 }
 
@@ -128,28 +123,36 @@ a:link {
   gap: 20px;
 }
 
-/* Estilo para los tours */
-/* Estilo para el container de tours */
+
+
+/* Estilo para los tours *//* Estilo para el container de tours */
+.tours-container {
+  display: flex;
+  flex-direction: column; /* Diseño vertical por defecto */
+  gap: 20px;
+  padding: 20px;
+  border-radius: 5px;
+}
 
 /* Estilo para los tours */
 .tour {
-    background-color: #FFFFFF;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    text-align: center;
+  background-color: #FFFFFF; /* Fondo blanco */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease-in-out; /* Efecto de escala al pasar el mouse */
 }
 
 .tour img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
 }
 
-.tour :hover {
-  background-color: #D5E1DB; 
+/* Efecto de escala al pasar el mouse sobre los tours */
+.tour:hover {
   transform: scale(1.05);
-  /* no se como hacer para que aplique a todo el bloque*/
 }
 
 @media screen and (min-width: 769px) {
@@ -242,6 +245,16 @@ form input[type="button"] {
   cursor: pointer;
   font-size: 16px;
 }
+
+#mensaje-reserva {
+  background-color: #2A6B4D;
+  color: #FFFFFF;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  text-align: center;
+}
+
 
 /* Cambia el color del botón al pasar el mouse sobre él */
 form input[type="button"]:hover {

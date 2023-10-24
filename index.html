@@ -4,7 +4,10 @@
     <!-- Enlace a una hoja de estilo CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
     <!-- Título de la página -->
     <title>TuriBA</title>
 </head>
@@ -98,27 +101,35 @@
           <!-- Subtítulo -->
           <h3>Reservá online para recorrer el barrio que quieras</h3>
           
-          <!-- Formulario con etiquetas para ingresar datos -->
+          <!-- Sección de Reserva -->
+<section id="reserva">
+  <h3>Reserva de Tour</h3>
+  <!-- Formulario de reserva -->
+  <form id="miFormulario">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre">
 
-          <form action="" method="post">
-            <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" id="nombre">
-            <p></p>
-            <label for="nacimiento">Fecha de nacimiento:</label>
-            <input type="date" name="nacimiento" id="nacimiento">
-            <p></p>
-            <label for="email">Correo electrónico:</label>
-            <input type="email" name="email" id="email">
-            <p></p>
-            <label for="tour">Tour solicitado:</label>
-            <select name="tour" id="tour">
-                <option value="San Telmo Tour">San Telmo Tour</option>
-                <option value="Palermo Tour">Palermo Tour</option>
-                <option value="Recoleta Tour">Recoleta Tour</option>
-            </select>
-            <p></p>
-            <input type="button" value="Reservar">
-        </form>
+      <label for="nacimiento">Fecha de nacimiento:</label>
+      <input type="date" id="nacimiento" name="nacimiento">
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email">
+
+      <label for="tour">Tour solicitado:</label>
+      <select id="tour" name="tour">
+          <option value="San Telmo Tour">San Telmo Tour</option>
+          <option value="Palermo Tour">Palermo Tour</option>
+          <option value="Recoleta Tour">Recoleta Tour</option>
+      </select>
+
+      <input type="button" value="Reservar" onclick="guardarFormulario()">
+  </form>
+
+  <!-- Mensaje de reserva -->
+  <div id="mensaje-reserva"></div>
+</section>
+
+          
         
        <!-- Sección de Reseñas de Usuarios -->
   <section id="resenas">
