@@ -286,6 +286,7 @@ form input[type="button"] hover {
   border-radius: 5px;
   margin-top: 20px;
   text-align: center;
+  display: none;
 }
 
 
@@ -308,4 +309,18 @@ form h2 {
   margin-bottom: 20px;
 }
 
+
+#redes-sociales {
+  display: flex;
+  align-items: center;
+}
+
+#redes-sociales a {
+  margin: 0 10px; /* Espacio entre íconos */
+}
+
+#redes-sociales img {
+  max-width: 50px; /* Tamaño máximo para los íconos */
+  height: auto;
+}
 
