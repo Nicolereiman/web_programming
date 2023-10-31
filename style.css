@@ -1,39 +1,44 @@
-//* Fondo blanco y tipografía Lato */
+/* Formato textos  */
 body {
-    font-family: montserrat,arial,sans-serif;
-    font-weight: 350;
-  letter-spacing: -.02em;
-    margin: 0;
-    padding: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  padding: 10px;
+  color: #333;
 }
+
+/* Estilo para el encabezado principal */
+h1 {
+  color: #FFFFFF;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  padding: 10px;
+  text-align: center;
+  background-color: #2A6B4D;
+}
+
+/* Estilo para el párrafo con ID "SecciónBarrios" */
+p#SecciónBarrios {
+  padding: 10px;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #2A6B4D;
+}
+
+/* Estilo para los subtítulos */
+h3 {
+  color: #558870;
+  font-family: 'Lora', serif;
+  margin: 10px;
+  text-align: center;
+}
+
+
 ::selection {
   background-color: #004D29!important;
   color: #fff!important;
 }
 
-/* Estilo para el encabezado principal */
-h1 {
-    color: #FFFFFF;
-    font-family: montserrat,arial,sans-serif;
-    border: 1px solid #004D29;
-    padding: 10px;
-    text-align: center;
-    background-color: #2A6B4D;
-}
-
-/* Estilo para el párrafo con ID "SecciónBarrios" (corregido) */
-p#SecciónBarrios {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #2A6B4D;
-}
-
-/* Estilo para los subtítulos */
-h3 {
-    color: #558870;
-    font-family: montserrat,arial,sans-serif;
-    margin: 10px 0;
-}
 
 /* Estilo para el logo */
 .logo {
@@ -253,17 +258,20 @@ form label {
   color: #2A6B4D;
 }
 
+/* Estilos para los campos del formulario */
 form input[type="text"],
 form input[type="date"],
 form input[type="email"],
 form select {
-  width: 100%;
+  width: 100%; /* Establece el ancho al 100% para que todos los campos tengan el mismo ancho */
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-bottom: 10px;
   font-size: 16px;
+  background-color: #FFF; /* Fondo blanco */
 }
+
 
 /* Estilo para el botón del formulario */
 form input[type="button"] {
@@ -287,6 +295,20 @@ form input[type="button"] hover {
   margin-top: 20px;
   text-align: center;
   display: none;
+}
+
+/* Estilos para los campos del formulario en la sección "Agregar Reseña" */
+#formularioResena input[type="text"],
+#formularioResena input[type="number"],
+#formularioResena textarea,
+#formularioResena select {
+  width: 100%; /* Establece el ancho al 100% para que todos los campos tengan el mismo ancho */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  background-color: #FFF; /* Fondo blanco */
 }
 
 
