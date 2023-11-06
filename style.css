@@ -1,16 +1,28 @@
 /* Formato textos  */
 body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif;
   font-weight: 300;
   letter-spacing: 0.01em;
   padding: 10px;
   color: #333;
 }
 
+/*
+body{
+  background-image: url('bici_caba.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  margin: 0; 
+  padding: 0; 
+}
+*/
+
 /* Estilo para el encabezado principal */
 h1 {
   color: #FFFFFF;
-  font-family: 'Playfair Display', serif;
+  font-family:'Montserrat', 'Playfair Display', serif;
   font-weight: 700;
   padding: 10px;
   text-align: center;
@@ -28,11 +40,10 @@ p#SecciónBarrios {
 /* Estilo para los subtítulos */
 h3 {
   color: #558870;
-  font-family: 'Lora', serif;
+  font-family: 'Tahoma' ,'Lora', serif;
   margin: 10px;
   text-align: center;
 }
-
 
 ::selection {
   background-color: #004D29!important;
@@ -139,11 +150,16 @@ a:link {
 /* Estilo para los tours *//* Estilo para el container de tours */
 .tours-container {
   display: flex;
-  flex-direction: column; /* Diseño vertical por defecto */
+  flex-direction: column;
   gap: 20px;
   padding: 20px;
   border-radius: 5px;
+  background-image: url('bici_caba.jpg'); /* Reemplaza 'bici_caba.jpg' con el nombre de tu archivo de imagen */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
+
 
 /* Estilo para los tours */
 .tour {
@@ -186,6 +202,8 @@ a:link {
   flex-wrap: wrap; /* Asegura que las reseñas se envuelvan a la siguiente línea */
   justify-content: space-between; /* Distribuye las reseñas horizontalmente */
 }
+
+
 
 .resena {
   display: inline-block; /* Cambiar a mostrar en línea en lugar de en bloque */
