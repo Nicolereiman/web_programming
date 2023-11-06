@@ -201,11 +201,7 @@ a:link {
 
 @media screen and (max-width: 767px) {
   /* Cambia el contenedor a un flexbox vertical en pantallas pequeñas */
-  .reseñas-container {
-    flex-direction: column;
-    justify-content: center; /* Centra verticalmente las reseñas */
-  }
-
+  
   .resena {
     width: 100%; /* Ocupa todo el ancho disponible en pantallas pequeñas */
   }
