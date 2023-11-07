@@ -9,10 +9,9 @@ body {
 
 
 body{
-  background-image: url('bici_caba2.jpg'); 
+  background-image: url('fondo3.jpg'); 
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: center center;
   margin: 0; 
   padding: 0; 
@@ -22,8 +21,9 @@ body{
 /* Estilo para el encabezado principal */
 h1 {
   color: #FFFFFF;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 900;
+  letter-spacing: -1px;
   padding: 10px;
   text-align: center;
   background-color: #2A6B4D;
@@ -35,24 +35,29 @@ p#SecciónBarrios {
   font-size: 1.5em;
   font-weight: 600;
   color: #2A6B4D;
+  font-family: 'Lato', sans-serif;
 }
 
 /* Estilo para los subtítulos */
-h2 {
+h2{
   color: #2A6B4D;
-  font-family: 'Tahoma' ,'Lora', serif;
+  font-family: 'Lato', sans-serif;
   margin: 10px;
   text-align: center;
 }
 
 /* Estilo para los subtítulos */
-h3 {
+h3{
   color: #FFFFFF;
-  font-family: 'Tahoma' ,'Lora', serif;
+  font-family: 'Lato', sans-serif;
   margin: 10px;
   text-align: center;
+  font-weight: Regular 400 Italic;
 }
 
+p{
+  font-family: 'Lato', sans-serif;
+}
 ::selection {
   background-color: #004D29!important;
   color: #fff!important;
@@ -86,9 +91,10 @@ h3 {
 
 @media screen and (max-width: 768px) {
     body{
-    background-color: #AAC4B8;
+    background-image: url('fondo4.jpg'); 
     }
 }
+ 
 
 /* unvisited link */
 a:link {
