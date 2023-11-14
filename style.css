@@ -9,7 +9,7 @@ body {
 
 
 body{
-  background-image: url('fondo3.jpg'); 
+  /* Fondo sin js background-image: url('fondo3.jpg'); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -91,7 +91,7 @@ p{
 
 @media screen and (max-width: 768px) {
     body{
-    background-image: url('fondo4.jpg'); 
+    /* fondo sin js background-image: url('fondo4.jpg');  */
     }
 }
  

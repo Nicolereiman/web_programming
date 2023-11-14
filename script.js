@@ -35,6 +35,28 @@ function guardarFormulario() {
   mensajeReservaElement.style.display = "block"; 
 }
 
+// hora actual
+var horaActual = new Date().getHours();
+var body = document.body;
+
+// Función para cambiar el fondo según el momento del día
+function cambiarFondoSegunHora() {
+    if (horaActual >= 6 && horaActual < 16) {
+        // Mañana (de 6:00 a 11:59)
+        body.style.backgroundImage = "url('fondo4.jpg')";
+    } else if (horaActual >= 16 && horaActual < 21) {
+        // Tarde (de 16:00 a 20:59)
+        body.style.backgroundImage = "url('fondo6.jpg')";
+    } else {
+        // Noche (de 21:00 a 05:59)
+        body.style.backgroundImage = "url('fondo3.jpg')";
+    }
+}
+
+// Llama a la función para cambiar el fondo
+cambiarFondoSegunHora();
+
+
     /*
   
 
