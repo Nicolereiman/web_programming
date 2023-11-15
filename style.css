@@ -4,12 +4,7 @@ body {
   font-weight: 300;
   letter-spacing: 0.01em;
   padding: 10px;
-  color: #333;
-}
-
-
-body{
-  /* Fondo sin js background-image: url('fondo3.jpg'); */
+  /*color: #333; */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -85,13 +80,13 @@ p{
 
 @media screen and (min-width: 769px) {
     body{
-    background-color: #fefefe;
+      background-image: url('fondo6.jpg');  
     }
 }
 
 @media screen and (max-width: 768px) {
     body{
-    /* fondo sin js background-image: url('fondo4.jpg');  */
+    background-image: url('fondo4.jpg');  
     }
 }
  
@@ -137,19 +132,30 @@ a:link {
   margin-right: 20px;
 }
 
-@media screen and (max-width: 767) {
-  #post {
+@media screen and (max-width: 767px) {
+  #body {
       text-align: left;
-      background-color: AAC4B8; /* Cambiar el color de fondo para pantallas chicas*/
   }
 }
 
-@media screen and (min-width: 768) {
+@media screen and (min-width: 768px) {
   body {
       text-align: center;
   }
 }
 
+@media screen and (min-width: 769px) {
+  .tours-container {
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* Cambia el contenedor a un flexbox vertical en pantallas pequeñas */
+  
+  .resena {
+    width: 100%; /* Ocupa todo el ancho disponible en pantallas pequeñas */
+  }
+}
 /* Estilo para el container de tours */
 .tours-container {
   display: flex;
@@ -198,11 +204,6 @@ a:link {
   transform: scale(1.05);
 }
 
-@media screen and (min-width: 769px) {
-  .tours-container {
-    flex-direction: row;
-  }
-}
 
 /* Estilos para la Sección de Reseñas de Usuarios */
 
@@ -233,13 +234,7 @@ a:link {
   text-align: center;
 }
 
-@media screen and (max-width: 767px) {
-  /* Cambia el contenedor a un flexbox vertical en pantallas pequeñas */
-  
-  .resena {
-    width: 100%; /* Ocupa todo el ancho disponible en pantallas pequeñas */
-  }
-}
+
 
 .usuario-info {
   display: flex;
@@ -313,6 +308,8 @@ form input[type="button"] {
   cursor: pointer;
   font-size: 16px;
 }
+
+
 form input[type="button"] hover {
   background-color: #004D29; /* Color de fondo al pasar el mouse */
 }
@@ -346,7 +343,9 @@ form input[type="button"] hover {
 form input[type="button"]:hover {
   background-color: #004D29;
 }
-
+form input[type="btnAgregarResena"]:hover {
+  background-color: #004D29;
+}
 /* Estilo para el mensaje de error (si es necesario) */
 .error-message {
   color: red;
