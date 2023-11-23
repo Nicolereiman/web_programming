@@ -105,10 +105,14 @@ function guardarResena() {
 
 
 
+// Esto nunca funcionó
+const horaActual = new Date().getHours();
 
-//Esta idea nunca funcionó
+// Función para cambiar el fondo según la hora
 function cambiarFondoSegunHora() {
   console.log("Cambiando fondo según la hora...");
+  const body = document.body; // Obtener el cuerpo del documento
+
   if (horaActual >= 6 && horaActual < 16) {
     console.log("Es de día (mañana)");
     body.style.backgroundImage = "url('fondo4.jpg')";
@@ -121,6 +125,12 @@ function cambiarFondoSegunHora() {
   }
 }
 
+// Llamar a la función para cambiar el fondo según la hora
+cambiarFondoSegunHora();
 
-// llamar a la función 
-cambiarFondoSegunHora()
+// script.js
+
+function toggleAnswer(element) {
+  const answer = element.querySelector('.answer');
+  answer.style.display = (answer.style.display === 'none' || answer.style.display === '') ? 'block' : 'none';
+}

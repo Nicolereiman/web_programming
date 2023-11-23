@@ -28,7 +28,7 @@ h1 {
 p#SecciónBarrios {
   padding: 10px;
   font-size: 1.5em;
-  font-weight: 600;
+  font-weight: 700;
   color: #2A6B4D;
   font-family: 'Lato', sans-serif;
 }
@@ -47,7 +47,7 @@ h3{
   font-family: 'Lato', sans-serif;
   margin: 10px;
   text-align: center;
-  font-weight: Regular 400 Italic;
+  font-weight: Regular 700 Italic;
 }
 
 p{
@@ -133,44 +133,40 @@ a:link {
 }
 
 @media screen and (max-width: 767px) {
-  #body {
+  .body {
       text-align: left;
   }
 }
 
 @media screen and (min-width: 768px) {
-  body {
+  .body {
       text-align: center;
   }
 }
 
-@media screen and (min-width: 769px) {
+
+@media screen and (min-width: 768px) {
   .tours-container {
     flex-direction: row;
   }
 }
-@media screen and (max-width: 767px) {
-  /* Cambia el contenedor a un flexbox vertical en pantallas pequeñas */
-  
-  .resena {
-    width: 100%; /* Ocupa todo el ancho disponible en pantallas pequeñas */
-  }
-}
-/* Estilo para el container de tours */
-.tours-container {
-  display: flex;
-  flex-direction: column; /* Diseño vertical por defecto */
 
-  /* Agregamos un margen entre los tours */
-  gap: 20px;
+
+@media screen and (max-width: 767px) {
+  .tours-container {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+  }
+ 
 }
+
 
 
 
 /* Estilo para los tours *//* Estilo para el container de tours */
 .tours-container {
   display: flex;
-  flex-direction: column;
   gap: 20px;
   padding: 20px;
   border-radius: 5px;
@@ -374,4 +370,33 @@ form h2 {
   max-width: 50px; /* Tamaño máximo para los íconos */
   height: auto;
 }
+
+/* styles.css */
+
+/* Estilos generales del sitio */
+
+.qna-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.qna-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  cursor: pointer;
+  background-color:#D5E1DB;
+}
+
+.qna-item h3 {
+  color: #2A6B4D;
+}
+
+.answer {
+  display: none;
+}
+
+/* Otros estilos según sea necesario */
 
