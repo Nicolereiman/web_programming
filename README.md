@@ -17,7 +17,7 @@ I chose this project because I’m passionate about the **history and cultural r
 - **CSS3**: Styling, layout, responsive design  
 - **JavaScript**: Interactivity and dynamic behavior
 
-## 🖼️ Live Preview
+## Live Preview
 
 👉 You can visit the site here:  
 [🌐 https://programacion-web-ecru.vercel.app/](https://programacion-web-ecru.vercel.app/)
@@ -32,7 +32,7 @@ cd Programacion_Web_Reiman
 open index.html
 ```
 
-🚀 Future Ideas
+## Future Ideas
 I would love to expand this project by:
 
 Adding a backend for tour reservations
@@ -41,7 +41,10 @@ Including interactive maps with user geolocation
 
 Translating the site to reach international visitors
 
-🙋 About Me
-I'm Nicole, a data analyst and data science student based in Buenos Aires. I love combining analytics with creativity — and projects like this let me explore how tech can help share stories that matter.
+## About Me
+I'm Nicole, a data scientist based in Buenos Aires with a strong interest in the intersection between data, storytelling, and cultural communication. I love combining analytics with creativity — and projects like this let me explore how technology can help share stories that matter.
+
+📫 Feel free to connect on [LinkedIn](https://www.linkedin.com/in/your-profile) or visit my [GitHub profile](https://github.com/Nicolereiman) for more projects.
+
 
 📫 Feel free to connect on LinkedIn or visit my GitHub profile for more projects.
