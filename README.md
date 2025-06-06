@@ -44,7 +44,4 @@ Translating the site to reach international visitors
 ## About Me
 I'm Nicole, a data scientist based in Buenos Aires with a strong interest in the intersection between data, storytelling, and cultural communication. I love combining analytics with creativity — and projects like this let me explore how technology can help share stories that matter.
 
-📫 Feel free to connect on [LinkedIn]((https://www.linkedin.com/in/nicole-reiman-32877b245/)) or visit my [GitHub profile](https://github.com/Nicolereiman) for more projects.
-
-
-📫 Feel free to connect on LinkedIn or visit my GitHub profile for more projects.
+📫 Feel free to connect on [LinkedIn](https://www.linkedin.com/in/nicole-reiman-32877b245/) or visit my [GitHub profile](https://github.com/Nicolereiman) for more projects.
