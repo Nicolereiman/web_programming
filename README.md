@@ -30,6 +30,7 @@ If you prefer to test it on your own machine:
 git clone https://github.com/Nicolereiman/Programacion_Web_Reiman.git
 cd Programacion_Web_Reiman
 open index.html
+```
 
 🚀 Future Ideas
 I would love to expand this project by:
