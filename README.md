@@ -1,11 +1,14 @@
 # Discover Buenos Aires 🌆  
 [🔗 Live Demo](https://programacion-web-ecru.vercel.app/)
 
-This is a web development project I created for a university course, where we learned the fundamentals of building functional websites using **HTML**, **CSS**, and **JavaScript**.
+TuriBA is a web development project I created for a university course, where we learned the fundamentals of building functional websites using **HTML**, **CSS**, and **JavaScript**.
 
 ## 🌍 Project Overview
 
-The website is designed as a **tourism platform** that highlights different cultural and historical tours across Buenos Aires. It includes sections for iconic landmarks, recommended routes, and visitor information — all presented in a clean and accessible format.
+TThe site allows users to explore guided tours in different neighborhoods of **Buenos Aires**, including San Telmo, Palermo, and Recoleta. Visitors can read descriptions, make tour reservations, and submit user reviews.
+
+The design is fully responsive and aimed at enhancing accessibility to the cultural and historical richness of the city.
+
 
 ## 🎯 Purpose
 
